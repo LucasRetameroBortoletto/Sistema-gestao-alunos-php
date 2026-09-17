@@ -1,41 +1,16 @@
+<?php require_once '../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/styleForm.css">
 </head>
 <style> 
-
         #aluno {
             outline: 2px solid white;
             border-radius: 5px;
-        }
-         form {
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-            margin: 10px auto;
-            padding: 15px 35px;
-            outline: 2px solid black;
-            border-radius: 10px;
-        }
-
-        input {
-            margin-bottom: 5px;
-            padding: 2px;
-        }
-
-        form .form-radio {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 6px;
-        }
-
-        label:hover,
-        .botao:hover {
-            cursor: pointer;
         }
 
         .container-resultado {

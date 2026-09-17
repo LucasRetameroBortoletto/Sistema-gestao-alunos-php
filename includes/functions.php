@@ -80,4 +80,34 @@ function atualizar($conexao, $id,  $nome, $nasc, $turma, $ativo) {
 
 echo "Alteração realizada com sucesso!!";
 }
+
+//Função cadastrar usuários login
+
+function cadastrar_user($conexao,$email , $password) {
+    $sql = "INSERT INTO usuarios(email, senha) VALUES(:email, :senha)";
+
+    $stmt = $conexao->prepare($sql);
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":senha",$password);
+
+    $stmt->execute();
+    echo "Usuário cadastrado com sucesso!";
+
+}
+
+function consultar_user($conexao, $email) {
+
+    $sql = "SELECT id, email, senha FROM usuarios WHERE email =  :email";
+    try {
+    $stmt = $conexao->prepare($sql);
+    $stmt->bindParam(":email", $email);
+    $stmt->execute();
+
+     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $usuario; 
+    } catch (PDOException $e) {
+        echo $e -> getMessage();
+    }
+}
 ?>

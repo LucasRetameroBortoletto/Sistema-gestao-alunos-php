@@ -21,3 +21,24 @@
 
 5. Atualizar um aluno 
 - Atualizar aluno a partir do ID
+
+### Sistema de login 
+
+RF descrição 
+
+1. Tabela usuários  
+
+```mermaid
+erDiagram
+Usuario {
+    id INT PK,
+    email VARCHAR(60)
+    senha VARCHAR(12)
+}
+```
+
+2. Cadastro de novos usuários
+
+3. Criar login 
+
+4. Verificar se os usuários são válidos em todas as páginas
