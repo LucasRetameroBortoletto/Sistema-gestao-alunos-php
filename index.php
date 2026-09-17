@@ -14,12 +14,26 @@
         body {
             text-align: center;
         }
+
+        main {
+            width: fit-content;
+            outline: 2px solid black;
+            padding: 15px;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        .titulos {
+            margin: 10px;
+            margin-bottom: 20px;
+        }
 </style>
 <body>
     <?php include './includes/header.php'; ?>
-    <h1>Mini sistema</h1>
-    <h2>Gestão de alunos</h2>
-    <h3>Seja bem vindo</h3>
+<main>
+    <h2 class="titulos">Gestão de alunos</h2>
+    <h3 class="titulos">Seja bem vindo</h3>
+</main>
     <?php include './includes/footer.php'; ?>
 </body>
 </html>

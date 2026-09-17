@@ -39,7 +39,7 @@
 </html>
 <div class="container-header">
 <header>
-    <h1>Sou o Header</h1>
+    <h1>Mini sistema</h1>
     <nav>
         <a href="/index.php" id="inicio">Início</a>
         <a href="../app/create.php" id="cadastrar">Cadastrar</a>
