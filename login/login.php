@@ -166,7 +166,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             <button type="submit" id="enviar">Enviar</button>
         </form>
         <footer>
-            <a href="">Não tem uma conta?</a>
+            <a href="/MINI SISTEMA/index.php">voltar | tela inicial</a>
         </footer>
     </div>
 </div>
