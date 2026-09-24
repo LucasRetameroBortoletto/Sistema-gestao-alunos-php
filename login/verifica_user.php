@@ -4,6 +4,6 @@ if(session_status() == PHP_SESSION_NONE) {
 }
 
 if(!isset($_SESSION['id'])) {
-    header("Location: ../login/login.php");
+    header("Location: /MINI SISTEMA/login/login.php");
 }
 ?>

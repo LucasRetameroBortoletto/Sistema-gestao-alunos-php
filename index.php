@@ -29,11 +29,11 @@
         }
 </style>
 <body>
-    <?php include './includes/header.php'; ?>
+    <?php include __DIR__ . '/includes/header.php'; ?>
 <main>
     <h2 class="titulos">Gestão de alunos</h2>
     <h3 class="titulos">Seja bem vindo</h3>
 </main>
-    <?php include './includes/footer.php'; ?>
+    <?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

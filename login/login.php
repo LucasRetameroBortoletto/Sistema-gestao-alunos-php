@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<?php require_once '../includes/functions.php'; ?>
+<?php require_once __DIR__ . '/../includes/functions.php'; ?>
 
 <?php 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         //cria uma sessão para manter o usuário logado
         $_SESSION['id'] = $usuario['id'];
 
-        header("Location: ../index.php"); //leva o usuário a index.php 
+        header("Location: /MINI SISTEMA/index.php"); //leva o usuário a index.php 
     } else {
         $mensagem = "Usuário ou senha inválidos!!";
     }

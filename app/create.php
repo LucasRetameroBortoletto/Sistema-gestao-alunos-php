@@ -1,11 +1,12 @@
-<?php require_once '../login/verifica_user.php'; ?>
+<?php require_once __DIR__ . '/../includes/functions.php'; ?>
+<?php require_once __DIR__ . '/../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Aluno</title>
-    <link rel="stylesheet" href="../style/styleForm.css">
+    <link rel="stylesheet" href="/MINI SISTEMA/style/styleForm.css">
     <style>
         #cadastrar {
             outline: 2px solid white;
@@ -15,7 +16,7 @@
 </head>
 <body>
     <?php 
-        include '../includes/header.php';
+        include __DIR__ . '/../includes/header.php';    
     ?>
     <form action="" method="post">
         <label for="nome">Nome</label>
@@ -29,9 +30,9 @@
 
         <div class="form-radio">
             <label for="ativo" required>Ativo: </label>
-            <input type="radio" name="ativo" id="sim" value="true">
+            <input type="radio" name="ativo" id="sim" value="true" class="radio">
             <label for="sim">Sim</label>
-            <input type="radio" name="ativo" id="nao" value="false">
+            <input type="radio" name="ativo" id="nao" value="false" class="radio">
             <label for="nao">Não</label>
         </div>
 
@@ -43,8 +44,8 @@
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         cadastrar($conexao, $_POST['nome'], $_POST['nasc'], $_POST['turma'], $_POST['ativo']);
     }
-    include '../includes/footer.php';
+    include __DIR__ . '/../includes/footer.php';
     ?>
-<?php require_once '../includes/functions.php'; ?>
+
 </body>
 </html>

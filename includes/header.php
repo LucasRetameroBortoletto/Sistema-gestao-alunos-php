@@ -14,30 +14,29 @@
         header {
             text-align: center;
         }
-        .container-header {
-            display: flex;
-            justify-content: center;
-        }
 
         nav {
-        margin-top: 10px;
+        justify-content: center;
+        display: flex;
         background-color: black;
-        padding: 14px;
-        border-radius: 15px;
+        padding: 16px;
         margin-bottom: 20px;
+        margin-bottom: 5%;
         }
 
         nav a {
+            text-transform: uppercase;
+            margin-left: 20px;
             text-decoration: none;
             padding: 5px;
             color: white;
-            outline: 1px solid transparent;
+            outline: 2px solid transparent;
             transition: outline-color 0.3s ease-in-out;
             border-radius: 5px;
         }
 
         nav a:hover {
-            outline: 1px solid lightslategray;
+            outline: 2px solid lightslategray;
             border-radius: 5px;
         }
     </style>
@@ -47,15 +46,14 @@
     </html>
     <div class="container-header">
     <header>
-        <h1>Mini sistema</h1>
         <nav>
-            <a href="/index.php" id="inicio">Início</a>
-            <a href="../app/create.php" id="cadastrar">Cadastrar</a>
-            <a href="../app/delete.php" id="deletar">Deletar</a>
-            <a href="../app/select.php" id="relatorio">Relatório</a>
-            <a href="../app/select_where.php" id="aluno">Aluno</a>
-            <a href="../app/update.php" id="atualizar">Atualizar</a>
-            <a href="../login/registerUser.php" id="register">Registrar</a>
+            <a href="/MINI SISTEMA/index.php" id="inicio">Início</a>
+            <a href="/MINI SISTEMA/app/create.php" id="cadastrar">Cadastrar</a>
+            <a href="/MINI SISTEMA/app/delete.php" id="deletar">Deletar</a>
+            <a href="/MINI SISTEMA/app/select.php" id="relatorio">Relatório</a>
+            <a href="/MINI SISTEMA/app/select_where.php" id="aluno">Aluno</a>
+            <a href="/MINI SISTEMA/app/update.php" id="atualizar">Atualizar</a>
+            <a href="/MINI SISTEMA/login/registerUser.php" id="register">Registrar</a>
         </nav>
     </div>
     </header>

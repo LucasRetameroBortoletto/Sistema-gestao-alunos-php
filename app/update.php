@@ -1,4 +1,4 @@
-<?php require_once '../login/verifica_user.php'; ?>
+<?php require_once __DIR__ .'/../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Chama o arquivo style para o forms -->
-    <link rel="stylesheet" href="../style/styleForm.css">
+    <link rel="stylesheet" href="/MINI SISTEMA/style/styleForm.css">
 </head>
 <style>
         #atualizar {
@@ -15,7 +15,7 @@
         }
 </style>
 <body>
-    <?php  include '../includes/header.php'; 
+    <?php  include __DIR__ . '/../includes/header.php'; 
     ?>
         <form action="" method="post">
         
@@ -50,4 +50,4 @@
         atualizar($conexao,$_POST['id'] , $_POST['nome'], $_POST['nasc'], $_POST['turma'], $_POST['ativo']);
     }
 ?>
-<?php require_once '../includes/functions.php'; ?>
+<?php require_once __DIR__ . '/../includes/functions.php'; ?>

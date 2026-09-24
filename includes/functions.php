@@ -1,5 +1,5 @@
 <?php 
-require_once '../database/connect_postgres.php';
+require_once __DIR__ . '/../database/connect_postgres.php';
 
 
 function cadastrar($conexao, $nome, $nasc, $turma, $ativo) {

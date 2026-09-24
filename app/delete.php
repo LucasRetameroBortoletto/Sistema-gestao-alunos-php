@@ -1,11 +1,12 @@
-<?php require_once '../login/verifica_user.php'; ?>
+<?php require_once __DIR__ . '/../includes/functions.php'; ?>
+<?php require_once __DIR__ . '/../login/verifica_user.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/styleForm.css">
+    <link rel="stylesheet" href="/MINI SISTEMA/style/styleForm.css">
 </head>
 <style>
         #deletar {
@@ -16,7 +17,7 @@
 <body>
 
 
-<?php include '../includes/header.php'; 
+<?php include __DIR__ . '/../includes/header.php'; 
 ?>
 
     <form action="" method="post">
@@ -31,10 +32,9 @@
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         deletar($conexao, $_POST['id']);
     }
-    include '../includes/footer.php';
+    include __DIR__ . '/../includes/footer.php';
     ?>
-<footer><?php require_once '../includes/functions.php'; ?> </footer>
-
+<footer> </footer>
 </body>
 </html>
 

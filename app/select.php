@@ -1,4 +1,4 @@
-<?php require_once '../login/verifica_user.php'; ?>
+<?php require_once __DIR__ . '/../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,9 +22,9 @@
 </style>
 <body>
     <?php 
-    include '../includes/header.php';
+    include __DIR__ . '/../includes/header.php';
 ?> 
-<?php require_once '../includes/functions.php'; ?>
+<?php require_once __DIR__ . '/../includes/functions.php'; ?>
 
 <?php
         relatorio($conexao);
