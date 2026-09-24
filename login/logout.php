@@ -1,14 +1,23 @@
-<?php 
-if(session_start() == PHP_SESSION_NONE) {
-    session_start();
-}
+<?php
 
+session_start();
+
+
+
+if(isset($_SESSION['usuario'])) {
 $_SESSION = array();
 session_destroy();
 
-header("Location: /MINI SISTEMA/index.php");
+echo "<script>
+    alert('Logout realizado com sucesso');
+    window.location.href = '/MINI SISTEMA/index.php';
+</script>";
 
-echo "<script>alert('Mensagem enviada com sucesso!');</script>";
+} else {
+    echo "<script>  
+    alert('Você não possui um login ativo !!');
+    window.location.href = '/MINI SISTEMA/index.php';
+    </script>" ;
+}
+exit;
 ?>
-
-
